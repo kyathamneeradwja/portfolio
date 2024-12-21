@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 100;
+    padding: 100;
+    text-align: center;
+    background-color: #fbfbf8;
+    color: #000;
+}
+
+header {
+    background-color: rgb(255, 165, 0);
+    color: white;
+    padding: 50px;
+    display: flex;
+}
+
+header .logo {
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
+    border-radius:50%;
+}
+header .personal{
+       text-align:bottom;
+}
+nav {
+    margin-left: auto; /* Push navigation to the right */
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: right;
+    margin: 0 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+.intro {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.achievements, .about-me {
+    margin: 20px 0;
+}
+
+.work {
+    margin: 10px 0;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+.logo-container { display: flex; justify-content: center; align-items: center; gap: 50px; /* Adds space between the logos */ margin-top: 20px; }
+.logoname-container { display: flex; justify-content: center; align-items: center; gap: 50px; /* Adds space between the logos */ margin-top: 0px; }
+.linkedin-button, .insta-button { width: 40px; height: 40px; background-size: cover; border-radius: 50%; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+.linkedin-button {background: url('linked in.jpg') no-repeat center center;} 
+.insta-button { background: url('instagram.jpg') no-repeat center center;}
