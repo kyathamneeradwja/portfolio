@@ -1,33 +1,257 @@
-<html>
-    <head>
-        <title>my portfolio</title>
-        <link rel="stylesheet" href="my portfolio .css">
-        <script src="my portfolio.js"></script>
-    </head>
-    <body>
-        <div class="bg">
-            <div class="main">
-                <div class="logo">
-                    <img src="passport.png" alt="log" class="logo">
-                </div>
-                <br><br>
-            </main>
-            <div class="flex">
-                <div class="font">
-                    <br><br>
-                    <div class="align">
-                        <div class="mark">
-                            <p>PERSONAL INFO</p>
-                        </div>
-                        <p>NAME:KYATHAM NEERADWAJA</p>
-                        <p>EMAIL:neeradwajakyatham@gmail.com</p>
-                        <p>DATE OF BIRTH:02,september,2004</p>
-                        <p>LOCATION:WARANGAL,TELANGANA,INDIA,
-                            506002</p>
-                    </div>
-                </div>
-            </div>
-            <div class="button-container"><button class="button" onclick="movie()">view my portfolio</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo img {
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .header-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .personal {
+            flex-grow: 1;
+        }
+
+        .personal p {
+            margin: 5px 0;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 40px;
+        }
+
+        .intro {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .intro h1 {
+            color: #007bff;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .achievements {
+            display: grid;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .work {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .work-heading {
+            font-size: 20px;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .social-media {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding-top: 10px;
+        }
+
+        .social-media a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+        }
+
+        .social-media img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .about-me {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .about-me h2 {
+            color: #007bff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #007bff;
+            color: white;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav {
+                margin-top: 10px;
+            }
+        }
+    </style>
+    <script>
+        function movie() {
+            window.print();
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="passport.png" alt="Logo">
         </div>
-    </body>
+        <div class="header-content">
+            <div class="personal">
+                <p>name: kyatham neeradwaja</p>
+                <p>study: btech-cse(cs)</p>
+                <p>ht.no: 2203A53006</p>
+            </div>
+            <nav>
+                <a href="#education">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="education" class="intro">
+            <h1>EDUCATION</h1>
+            <p><b>SR UNIVERSITY</b> (2022 - 2026)</p>
+            <p><b>FEILD OF STUDY:</b> technology(computer science)</p>
+            <p><b>TYPE OF DEGREE:</b> bachelors</p>
+            <p><b>LOCATION:</b> warangal,telangana,india</p>
+            <p><b>GPA:</b> 7.9</p>
+            <button onclick="movie()">print resume</button>
+        </div>
+
+        <div class="achievements">
+            <div class="work">
+                <i class="fas fa-atom"></i>
+                <p class="work-heading">Projects</p>
+                <div style="display: flex; justify-content: center;">
+                    <video width="35%" controls><source src="ssd1.mp4" type="video/mp4"></video>
+                </div>
+                <p class="work-text"><b>1.FOOD SAFETY SYSTEM</b></p>
+                <p class="work-text"><i>Food Safety System is a device which is used to detect the spoiled or rotten food .This device is built using arduino uno board,mq4 methane sensor,node mcu 1.0(ESP8266) wifi module,buzzer,2 led lights(red and green)
+                    .This device is programmed in C++.Every fruit or vegetable releases methane gas when it gets spoiled ,so our food safety system detects the amount pof methane gas released by the foof item , if the amount exceeds 150 the red color led light turns on and the buzzer sounds and vise-versa if the methane gas amount is below 150.
+                </i></p>
+                <p class="work-text"><b>2.POLICE STATION MANAGEMENT SYSTEM</b></p>
+                <p class="work-text"><i>Police Station Management System (PSMS) is a desktop application that aims at computerizing and simplifying the daily activities of a police station. It offers an effective platform to file, track, and maintain First Information Reports (FIRs) and other case histories.
+
+Major features are:
+
+FIR Filing Module: Crime or civil cases details can be input by citizens or authorized personnel using simple forms.
+
+Database Integration: Every record is safely stored in a MongoDB database for rapid retrieval and updating.
+
+Administrative Dashboard: An all-screen Tkinter-based dashboard enables police officials to display, search, and handle cases easily.
+
+Document Management: Facilitates uploading files (evidence, reports, and case files) for storing in a centralized repository.
+
+Role-based Access: Protects data privacy by granting access or editing of confidential records only to privileged users (officers or administrators).
+
+By substituting a manual register with an automated system, this project aids in enhancing data accuracy, response time, and overall efficiency in police station operations. It can further be extended with features such as crime analytics, SMS/email alerts, and integration with other law-enforcement databases.
+                </i></p>
+            </div>
+
+            <div class="work">
+                <i class="fas fa-skiing"></i>
+                <p class="work-heading">Skills</p>
+                <p class="work-text"><b>Programming Languages</b><i> python, c language,HTML,css,python GUI(tkinter,pymongo,PIL)</i></p>
+            </div>
+
+            <div class="work" id="contact">
+                <i class="fas fa-ethernet"></i>
+                <p class="work-heading">Network</p>
+                <p class="work-text">I have a lot of network skills and I am very good at them. I am very good at networking and I am always looking for new network skills.</p>
+                <p><b>follow me on</b></p>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/kyatham-neeradwaja-0b5386230">
+                        <img src="linked in.jpg" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.instagram.com/k_neeradwaja_bunny">
+                        <img src="instagram.jpg" alt="Instagram">
+                    </a>
+                </div>
+                <p><b>Email:</b> neeradwajakyatham@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="about-me" id="about">
+            <h2>About Me</h2>
+            <p>I am a highly passionate and committed B.Tech student of SR University, specializing in Cyber Security and having a strong background in programming, system development, and digital forensics. I am greatly interested in real-world implementations of security protocols and software development and learn continuously through projects and hands-on certifications.My technical experience involves developing safe Python and MongoDB applications, developing food safety systems based on IoT through Arduino, and developing education platforms and personal websites. I hold several certifications from IBM, Coursera, and top universities, and I am a HackerRank 5-star Python programmer.I am presently seeking opportunities to apply my skills in new environments that enable me to grow in domains like penetration testing, ethical hacking, and secure system design.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 KYATHAM NEERADWAJA</p>
+    </footer>
+</body>
 </html>
